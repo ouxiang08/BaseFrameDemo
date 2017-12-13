@@ -36,6 +36,8 @@
 		BF62A1ED1FE112030010C046 /* BFTitleValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1EC1FE112030010C046 /* BFTitleValueCell.m */; };
 		BF62A1F01FE114150010C046 /* BFTitleTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1EE1FE114150010C046 /* BFTitleTextFieldCell.m */; };
 		BF62A1F31FE115020010C046 /* BFTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1F21FE115020010C046 /* BFTableViewDelegate.m */; };
+		BF62A1F61FE119EC0010C046 /* BFTempletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1F51FE119EC0010C046 /* BFTempletViewController.m */; };
+		BF62A1FB1FE11AAA0010C046 /* BFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1FA1FE11AAA0010C046 /* BFAppDelegate.m */; };
 		BF87BE6F1FE0D45200146486 /* BFMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE641FE0D45200146486 /* BFMatchResult.m */; };
 		BF87BE701FE0D45200146486 /* BFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE661FE0D45200146486 /* BFRegularExpression.m */; };
 		BF87BE711FE0D45200146486 /* BFRouteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE681FE0D45200146486 /* BFRouteHandler.m */; };
@@ -153,6 +155,10 @@
 		BF62A1EF1FE114150010C046 /* BFTitleTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTitleTextFieldCell.h; sourceTree = "<group>"; };
 		BF62A1F11FE115020010C046 /* BFTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTableViewDelegate.h; sourceTree = "<group>"; };
 		BF62A1F21FE115020010C046 /* BFTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTableViewDelegate.m; sourceTree = "<group>"; };
+		BF62A1F41FE119EC0010C046 /* BFTempletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFTempletViewController.h; sourceTree = "<group>"; };
+		BF62A1F51FE119EC0010C046 /* BFTempletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFTempletViewController.m; sourceTree = "<group>"; };
+		BF62A1F91FE11AAA0010C046 /* BFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAppDelegate.h; sourceTree = "<group>"; };
+		BF62A1FA1FE11AAA0010C046 /* BFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFAppDelegate.m; sourceTree = "<group>"; };
 		BF87BE631FE0D45200146486 /* BFMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFMatchResult.h; sourceTree = "<group>"; };
 		BF87BE641FE0D45200146486 /* BFMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFMatchResult.m; sourceTree = "<group>"; };
 		BF87BE651FE0D45200146486 /* BFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFRegularExpression.h; sourceTree = "<group>"; };
@@ -305,7 +311,10 @@
 		BF4849C01FE0CDBE00B83036 /* BaseFrameDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BF62A1F81FE11A5B0010C046 /* AppDelegate */,
 				BF87BEE41FE0F6E200146486 /* General */,
+				BF62A1F41FE119EC0010C046 /* BFTempletViewController.h */,
+				BF62A1F51FE119EC0010C046 /* BFTempletViewController.m */,
 				BF4849C11FE0CDBE00B83036 /* AppDelegate.h */,
 				BF4849C21FE0CDBE00B83036 /* AppDelegate.m */,
 				BF4849C41FE0CDBE00B83036 /* ViewController.h */,
@@ -314,10 +323,7 @@
 				BF62A1A91FE1050E0010C046 /* BFMainViewController.m */,
 				BF4849C71FE0CDBE00B83036 /* Main.storyboard */,
 				BF4849CD1FE0CDBE00B83036 /* Assets.xcassets */,
-				BF4849CF1FE0CDBE00B83036 /* LaunchScreen.storyboard */,
-				BF4849D21FE0CDBE00B83036 /* Info.plist */,
-				BF4849D31FE0CDBE00B83036 /* main.m */,
-				BF4849CA1FE0CDBE00B83036 /* BaseFrameDemo.xcdatamodeld */,
+				BF62A1F71FE11A1D0010C046 /* Supporting Files */,
 			);
 			path = BaseFrameDemo;
 			sourceTree = "<group>";
@@ -457,6 +463,26 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BF62A1F71FE11A1D0010C046 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF4849CF1FE0CDBE00B83036 /* LaunchScreen.storyboard */,
+				BF4849D21FE0CDBE00B83036 /* Info.plist */,
+				BF4849D31FE0CDBE00B83036 /* main.m */,
+				BF4849CA1FE0CDBE00B83036 /* BaseFrameDemo.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF62A1F81FE11A5B0010C046 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BF62A1F91FE11AAA0010C046 /* BFAppDelegate.h */,
+				BF62A1FA1FE11AAA0010C046 /* BFAppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		BF87BE621FE0D45200146486 /* BFRouter */ = {
@@ -793,6 +819,7 @@
 				BF87BEA31FE0D49200146486 /* UIView+ConvenienceFrame.m in Sources */,
 				BF87BE711FE0D45200146486 /* BFRouteHandler.m in Sources */,
 				BF87BE701FE0D45200146486 /* BFRegularExpression.m in Sources */,
+				BF62A1F61FE119EC0010C046 /* BFTempletViewController.m in Sources */,
 				BF87BE9E1FE0D49200146486 /* UIImage+TintColor.m in Sources */,
 				BF87BF071FE0F74C00146486 /* BFRequest.m in Sources */,
 				BF62A1F31FE115020010C046 /* BFTableViewDelegate.m in Sources */,
@@ -843,6 +870,7 @@
 				BF87BECB1FE0D6A000146486 /* NSMutableDictionary+Utilities.m in Sources */,
 				BF62A1A41FE103A30010C046 /* BFStepper.m in Sources */,
 				BF4849CC1FE0CDBE00B83036 /* BaseFrameDemo.xcdatamodeld in Sources */,
+				BF62A1FB1FE11AAA0010C046 /* BFAppDelegate.m in Sources */,
 				BF87BEC31FE0D6A000146486 /* BFLocation.m in Sources */,
 				BF87BE741FE0D45200146486 /* BFRouteRequest.m in Sources */,
 				BF62A1CB1FE107180010C046 /* BFRefreshTableView.m in Sources */,
