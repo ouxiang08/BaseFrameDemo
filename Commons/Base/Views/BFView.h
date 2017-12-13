@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BFObject.h"
 
 @interface BFView : UIView
+
+@property (nonatomic, copy) void (^onCustomEventInView)(UIView *view,NSString *eventName, id parameter);
+
+- (void)configWithData:(BFObject *)data;
+
 
 @end

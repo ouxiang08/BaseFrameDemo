@@ -10,6 +10,42 @@
 
 @implementation UIView (ConvenienceFrame)
 
+- (CGFloat)x {
+    return self.frame.origin.x;
+}
+
+- (void)setX:(CGFloat)newX {
+    CGRect frame = self.frame;
+    frame.origin.x = newX;
+    self.frame = frame;
+}
+
+- (CGFloat)y {
+    return self.frame.origin.y;
+}
+
+- (void)setY:(CGFloat)newY {
+    CGRect frame = self.frame;
+    frame.origin.y = newY;
+    self.frame = frame;
+}
+
+- (CGFloat)maxY {
+    return self.y + self.height;
+}
+
+- (void)setMaxY:(CGFloat)maxY {
+    [self setY:maxY - self.height];
+}
+
+- (CGFloat)maxX {
+    return self.x + self.width;
+}
+
+- (void)setMaxX:(CGFloat)maxX {
+    [self setX:maxX - self.width];
+}
+
 - (CGFloat)left {
     return self.frame.origin.x;
 }

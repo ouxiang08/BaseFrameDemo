@@ -30,6 +30,12 @@
 		BF62A1CB1FE107180010C046 /* BFRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1BE1FE107180010C046 /* BFRefreshTableView.m */; };
 		BF62A1CC1FE107180010C046 /* BFTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1C11FE107180010C046 /* BFTableView.m */; };
 		BF62A1CD1FE107180010C046 /* BFView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1C31FE107180010C046 /* BFView.m */; };
+		BF62A1DC1FE10F510010C046 /* BFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1DB1FE10F510010C046 /* BFTextField.m */; };
+		BF62A1E71FE1103E0010C046 /* BFImageTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1DF1FE1103E0010C046 /* BFImageTextFieldCell.m */; };
+		BF62A1E81FE1103E0010C046 /* BFTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1E11FE1103E0010C046 /* BFTitleCell.m */; };
+		BF62A1ED1FE112030010C046 /* BFTitleValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1EC1FE112030010C046 /* BFTitleValueCell.m */; };
+		BF62A1F01FE114150010C046 /* BFTitleTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1EE1FE114150010C046 /* BFTitleTextFieldCell.m */; };
+		BF62A1F31FE115020010C046 /* BFTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1F21FE115020010C046 /* BFTableViewDelegate.m */; };
 		BF87BE6F1FE0D45200146486 /* BFMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE641FE0D45200146486 /* BFMatchResult.m */; };
 		BF87BE701FE0D45200146486 /* BFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE661FE0D45200146486 /* BFRegularExpression.m */; };
 		BF87BE711FE0D45200146486 /* BFRouteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE681FE0D45200146486 /* BFRouteHandler.m */; };
@@ -135,6 +141,18 @@
 		BF62A1C11FE107180010C046 /* BFTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTableView.m; sourceTree = "<group>"; };
 		BF62A1C21FE107180010C046 /* BFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFView.h; sourceTree = "<group>"; };
 		BF62A1C31FE107180010C046 /* BFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFView.m; sourceTree = "<group>"; };
+		BF62A1DA1FE10F510010C046 /* BFTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFTextField.h; sourceTree = "<group>"; };
+		BF62A1DB1FE10F510010C046 /* BFTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFTextField.m; sourceTree = "<group>"; };
+		BF62A1DE1FE1103E0010C046 /* BFImageTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFImageTextFieldCell.h; sourceTree = "<group>"; };
+		BF62A1DF1FE1103E0010C046 /* BFImageTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFImageTextFieldCell.m; sourceTree = "<group>"; };
+		BF62A1E01FE1103E0010C046 /* BFTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTitleCell.h; sourceTree = "<group>"; };
+		BF62A1E11FE1103E0010C046 /* BFTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTitleCell.m; sourceTree = "<group>"; };
+		BF62A1EB1FE112030010C046 /* BFTitleValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTitleValueCell.h; sourceTree = "<group>"; };
+		BF62A1EC1FE112030010C046 /* BFTitleValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTitleValueCell.m; sourceTree = "<group>"; };
+		BF62A1EE1FE114150010C046 /* BFTitleTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTitleTextFieldCell.m; sourceTree = "<group>"; };
+		BF62A1EF1FE114150010C046 /* BFTitleTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTitleTextFieldCell.h; sourceTree = "<group>"; };
+		BF62A1F11FE115020010C046 /* BFTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTableViewDelegate.h; sourceTree = "<group>"; };
+		BF62A1F21FE115020010C046 /* BFTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTableViewDelegate.m; sourceTree = "<group>"; };
 		BF87BE631FE0D45200146486 /* BFMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFMatchResult.h; sourceTree = "<group>"; };
 		BF87BE641FE0D45200146486 /* BFMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFMatchResult.m; sourceTree = "<group>"; };
 		BF87BE651FE0D45200146486 /* BFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFRegularExpression.h; sourceTree = "<group>"; };
@@ -413,6 +431,30 @@
 				BF62A1C11FE107180010C046 /* BFTableView.m */,
 				BF62A1C21FE107180010C046 /* BFView.h */,
 				BF62A1C31FE107180010C046 /* BFView.m */,
+				BF62A1DA1FE10F510010C046 /* BFTextField.h */,
+				BF62A1DB1FE10F510010C046 /* BFTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF62A1DD1FE1103E0010C046 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF62A1EF1FE114150010C046 /* BFTitleTextFieldCell.h */,
+				BF62A1EE1FE114150010C046 /* BFTitleTextFieldCell.m */,
+				BF62A1EB1FE112030010C046 /* BFTitleValueCell.h */,
+				BF62A1EC1FE112030010C046 /* BFTitleValueCell.m */,
+				BF62A1DE1FE1103E0010C046 /* BFImageTextFieldCell.h */,
+				BF62A1DF1FE1103E0010C046 /* BFImageTextFieldCell.m */,
+				BF62A1E01FE1103E0010C046 /* BFTitleCell.h */,
+				BF62A1E11FE1103E0010C046 /* BFTitleCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BF62A1E61FE1103E0010C046 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -508,10 +550,11 @@
 		BF87BEE41FE0F6E200146486 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				BF62A1DD1FE1103E0010C046 /* Cells */,
+				BF62A1E61FE1103E0010C046 /* Views */,
 				BF87BEE51FE0F6E200146486 /* Classes */,
 				BF87BEEA1FE0F6E200146486 /* Macro */,
 				BF87BEF01FE0F6E200146486 /* ViewControllers */,
-				BF87BEF11FE0F6E200146486 /* Views */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -519,6 +562,8 @@
 		BF87BEE51FE0F6E200146486 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF62A1F11FE115020010C046 /* BFTableViewDelegate.h */,
+				BF62A1F21FE115020010C046 /* BFTableViewDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -542,13 +587,6 @@
 				BF62A1A51FE104A60010C046 /* BFTabViewControlle.m */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		BF87BEF11FE0F6E200146486 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		CFADC6242E42DD0D2AA57AD7 /* Frameworks */ = {
@@ -757,6 +795,7 @@
 				BF87BE701FE0D45200146486 /* BFRegularExpression.m in Sources */,
 				BF87BE9E1FE0D49200146486 /* UIImage+TintColor.m in Sources */,
 				BF87BF071FE0F74C00146486 /* BFRequest.m in Sources */,
+				BF62A1F31FE115020010C046 /* BFTableViewDelegate.m in Sources */,
 				BF87BF051FE0F74C00146486 /* BFNetworkReachabilityManager.m in Sources */,
 				BF87BEC21FE0D6A000146486 /* BFLocalSettings.m in Sources */,
 				BF87BEA11FE0D49200146486 /* UINavigationItem+iOS7Spacing.m in Sources */,
@@ -766,14 +805,19 @@
 				BF62A1CA1FE107180010C046 /* BFRefreshCollectionView.m in Sources */,
 				BF87BE9D1FE0D49200146486 /* UIImage+RoundedCorner.m in Sources */,
 				BF87BE9C1FE0D49200146486 /* UIImage+Resize.m in Sources */,
+				BF62A1F01FE114150010C046 /* BFTitleTextFieldCell.m in Sources */,
 				BF62A1C61FE107180010C046 /* BFCollectionViewCell.m in Sources */,
+				BF62A1DC1FE10F510010C046 /* BFTextField.m in Sources */,
 				BF87BEC91FE0D6A000146486 /* NSData+Utilities.m in Sources */,
 				BF87BE9B1FE0D49200146486 /* UIImage+LFGif.m in Sources */,
+				BF62A1E71FE1103E0010C046 /* BFImageTextFieldCell.m in Sources */,
 				BF87BECE1FE0D6A000146486 /* UIFactory.m in Sources */,
 				BF62A1C51FE107180010C046 /* BFVersion.m in Sources */,
+				BF62A1ED1FE112030010C046 /* BFTitleValueCell.m in Sources */,
 				BF4849C61FE0CDBE00B83036 /* ViewController.m in Sources */,
 				BF62A1C41FE107180010C046 /* BFObject.m in Sources */,
 				BF87BF301FE0FF1900146486 /* BFTagView.m in Sources */,
+				BF62A1E81FE1103E0010C046 /* BFTitleCell.m in Sources */,
 				BF87BF061FE0F74C00146486 /* BFNetworkManager.m in Sources */,
 				BF87BE981FE0D49200146486 /* UIImage+Alpha.m in Sources */,
 				BF87BE6F1FE0D45200146486 /* BFMatchResult.m in Sources */,

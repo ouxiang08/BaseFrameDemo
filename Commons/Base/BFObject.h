@@ -16,6 +16,8 @@
     CGSize _contentSize;
 }
 
+@property (nonatomic, assign) BOOL isExpand;
+
 - (CGFloat)contentHeight;
 
 - (CGSize)contentSize;
