@@ -17,7 +17,6 @@ typedef NS_ENUM(NSInteger, RNCAdRequestState) {
 };
 
 // Specify a bitmask with a name (recommended way)用一个别名来指定一个bitmask（推荐方法
-
 typedef NS_ENUM(NSUInteger, RPBitM) {
     RPOptionNone = 0,
     RPOptionRight = 1 << 0,
@@ -35,10 +34,13 @@ typedef enum {
 }BFRefreshType;
 
 @interface BFTempletViewController () <UITableViewDataSource, UITableViewDelegate> {
+    // Instance variable declarations.
     //不要将私有的实例变量和方法声明在头文件中，应将私有变量和方法声明在实现文件的类扩展内。
     //指针变量的星号指示符应该紧靠变量，比如NSString *text,而不是NSString* text或NSString * text。
     UITableView *_tableView;
 }
+
+// Method and property declarations.
 
 @property (nonatomic, strong) UIWebView *adXWebView;
 
@@ -46,14 +48,40 @@ typedef enum {
 
 @end
 
+
+#pragma mark - Informal Protocols（非正式正式协议）
+
+/*
+ *非正式的协议通常声明为 NSObject 类的类别, 因为这将极大的将方法名与任何继承自NSObject类的类联系起来。
+ *因为所有的类都是继承自根类，方法在继承树中的任何地方都没有什么严格限制。
+ *一个非正式协议改变了类别声明的规则，列出了一组方法，但没有将它们与任何特定类或者实现联系起来。
+ */
+
+@interface NSObject (MyXMLSupport)
+
+- initFromXMLRepresentation:(NSString *)XMLElement;
+
+- (NSString *)XMLRepresentation;
+
+@end
+
 @implementation BFTempletViewController
 
 #pragma mark - @synthesize and @dynamic
 
-//当你使用@synthesize指令时，编译器会自动为你创建一个下划线_开头的的实例变量，所以不需要同时声明实例变量和属性。
-//不要使用@synthesize除非是编译器需要。注意在@protoco协议中的@optional可选属性必须被显式地使用@synthesize指令合成属性。
+/*
+ *在.m文件中我们使用@synthesize自动生成这两个实例变量的存取器，并且隐藏了存取器，虽然我们看不到存取器，但它们确实是存在的。
+ *当你使用@synthesize指令时，编译器会自动为你创建一个下划线_开头的的实例变量，所以不需要同时声明实例变量和属性。
+ *不要使用@synthesize除非是编译器需要。注意在@protoco协议中的@optional可选属性必须被显式地使用@synthesize指令合成属性。
+ */
 @synthesize stores;
+//@synthesize stores = _items;
 
+
+/*
+ * 你可以使用 @dynamic 关键字来告诉编译器，属性的获取与赋值方法由用户自己实现, 不自动生成，不在这个类中，可能在父类或者别的地方。
+ * 只有在你确信运行时这些访问器方法将可用时才使用这个关键字。
+ */
 @dynamic name;
 
 #pragma mark - Init（初始化方法）
@@ -90,6 +118,10 @@ typedef enum {
     NSArray *names = @[@"Matt", @"Chris", @"Alex", @"Steve", @"Paul"];
     NSDictionary *productManagers = @{@"iPhone":@"Kate" ,@"iPad":@"Kamal" ,@"Mobile Web":@"Bill"};
     NSNumber *buildingZIPCode = @10018;
+    
+    [names enumerateObjectsUsingBlock:^(NSString *nameOfPerson, NSUInteger idx, BOOL *stop) {
+            NSLog(@"Person's name is: %@", nameOfPerson);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -169,6 +201,32 @@ typedef enum {
     
     ///Objective-C中还有很多其他类型，如NSInteger, NSUInteger, CGRect,CGFloat, CGSize, CGPoint等。
     
+    //Protocol *myXMLSupportProtocol = @protocol();
+    
+}
+
+/*
+ *闭包是一个函数（或指向函数的指针），再加上该函数执行的外部的上下文变量（有时候也称作自由变量）。
+ */
+- (void)useBlock {
+    /*
+     *Block定义
+     *同函数一样，有类型化参数列表
+     *有返回结果或者要申明返回类型
+     *能获取同一作用域（定义块的相同作用域）内的状态
+     *可以修改同一作用域的状态（变量）
+     *与同一范围内的其他块同享变量
+     *在作用域释放后能继续共享和改变同一范围内的变量
+     **/
+    int multiplier = 7;
+    int (^myBlock)(int) = ^(int num) {
+        return num * multiplier;
+    };
+    
+    NSLog(@"block is %d",myBlock(5));
+    
+    //
+    
 }
 
 #pragma mark - Data (数据的处理)
@@ -200,6 +258,21 @@ typedef enum {
 
 - (void)setName:(NSString *)name {
     _name = name;
+}
+
+//assign
+- (void)setRunning:(int)running {
+    _running = running;
+}
+
+//retain
+- (void)setIgnorProperty:(NSMutableDictionary *)ignorProperty {
+    //首先判断是否与旧对象一致，如果不一致进行赋值。
+    //因为如果是一个对象的话，进行if内的代码会造成一个极端的情况：当此name的retain为1时，使此次的set操作让实例name提前释放，而达不到赋值目的。
+//    if (ignorProperty != _ignorProperty) {
+//        [ignorProperty release];
+//        ignorProperty = [_ignorProperty retain];
+//    }
 }
 
 #pragma mark - Getter (Getter方法)

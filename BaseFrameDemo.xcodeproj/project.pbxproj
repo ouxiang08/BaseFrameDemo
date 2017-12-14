@@ -38,6 +38,19 @@
 		BF62A1F31FE115020010C046 /* BFTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1F21FE115020010C046 /* BFTableViewDelegate.m */; };
 		BF62A1F61FE119EC0010C046 /* BFTempletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1F51FE119EC0010C046 /* BFTempletViewController.m */; };
 		BF62A1FB1FE11AAA0010C046 /* BFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A1FA1FE11AAA0010C046 /* BFAppDelegate.m */; };
+		BF62A2011FE23ACF0010C046 /* BFTempletViewController+RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A2001FE23ACF0010C046 /* BFTempletViewController+RunTime.m */; };
+		BF62A2241FE270DB0010C046 /* BFLocalSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A20B1FE270DB0010C046 /* BFLocalSettings.m */; };
+		BF62A2251FE270DB0010C046 /* BFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A20D1FE270DB0010C046 /* BFLocation.m */; };
+		BF62A2261FE270DB0010C046 /* BFLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A20F1FE270DB0010C046 /* BFLocationManager.m */; };
+		BF62A2281FE270DB0010C046 /* DSAAS.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A2121FE270DB0010C046 /* DSAAS.m */; };
+		BF62A2291FE270DB0010C046 /* GlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A2141FE270DB0010C046 /* GlobalUICommon.m */; };
+		BF62A22A1FE270DB0010C046 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A2161FE270DB0010C046 /* NSArray+Utilities.m */; };
+		BF62A22B1FE270DB0010C046 /* NSData+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A2181FE270DB0010C046 /* NSData+Utilities.m */; };
+		BF62A22C1FE270DB0010C046 /* NSDate+Utilties.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A21A1FE270DB0010C046 /* NSDate+Utilties.m */; };
+		BF62A22D1FE270DB0010C046 /* NSMutableDictionary+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A21C1FE270DB0010C046 /* NSMutableDictionary+Utilities.m */; };
+		BF62A22E1FE270DB0010C046 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A21E1FE270DB0010C046 /* NSString+Utilities.m */; };
+		BF62A22F1FE270DB0010C046 /* TWDeviceUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A2201FE270DB0010C046 /* TWDeviceUtilities.m */; };
+		BF62A2301FE270DB0010C046 /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62A2221FE270DB0010C046 /* UIFactory.m */; };
 		BF87BE6F1FE0D45200146486 /* BFMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE641FE0D45200146486 /* BFMatchResult.m */; };
 		BF87BE701FE0D45200146486 /* BFRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE661FE0D45200146486 /* BFRegularExpression.m */; };
 		BF87BE711FE0D45200146486 /* BFRouteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE681FE0D45200146486 /* BFRouteHandler.m */; };
@@ -58,17 +71,6 @@
 		BF87BEA11FE0D49200146486 /* UINavigationItem+iOS7Spacing.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE901FE0D49100146486 /* UINavigationItem+iOS7Spacing.m */; };
 		BF87BEA21FE0D49200146486 /* UITabBar+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE921FE0D49100146486 /* UITabBar+Badge.m */; };
 		BF87BEA31FE0D49200146486 /* UIView+ConvenienceFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BE941FE0D49100146486 /* UIView+ConvenienceFrame.m */; };
-		BF87BEC21FE0D6A000146486 /* BFLocalSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEA91FE0D6A000146486 /* BFLocalSettings.m */; };
-		BF87BEC31FE0D6A000146486 /* BFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEAB1FE0D6A000146486 /* BFLocation.m */; };
-		BF87BEC41FE0D6A000146486 /* BFLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEAD1FE0D6A000146486 /* BFLocationManager.m */; };
-		BF87BEC71FE0D6A000146486 /* GlobalUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEB21FE0D6A000146486 /* GlobalUICommon.m */; };
-		BF87BEC81FE0D6A000146486 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEB41FE0D6A000146486 /* NSArray+Utilities.m */; };
-		BF87BEC91FE0D6A000146486 /* NSData+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEB61FE0D6A000146486 /* NSData+Utilities.m */; };
-		BF87BECA1FE0D6A000146486 /* NSDate+Utilties.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEB81FE0D6A000146486 /* NSDate+Utilties.m */; };
-		BF87BECB1FE0D6A000146486 /* NSMutableDictionary+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEBA1FE0D6A000146486 /* NSMutableDictionary+Utilities.m */; };
-		BF87BECC1FE0D6A000146486 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEBC1FE0D6A000146486 /* NSString+Utilities.m */; };
-		BF87BECD1FE0D6A000146486 /* TWDeviceUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEBE1FE0D6A000146486 /* TWDeviceUtilities.m */; };
-		BF87BECE1FE0D6A000146486 /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEC01FE0D6A000146486 /* UIFactory.m */; };
 		BF87BED31FE0D8D300146486 /* UIImage+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BED21FE0D8D200146486 /* UIImage+Device.m */; };
 		BF87BF041FE0F74C00146486 /* BFResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BEFB1FE0F74B00146486 /* BFResponse.m */; };
 		BF87BF051FE0F74C00146486 /* BFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF87BF001FE0F74C00146486 /* BFNetworkReachabilityManager.m */; };
@@ -159,6 +161,33 @@
 		BF62A1F51FE119EC0010C046 /* BFTempletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFTempletViewController.m; sourceTree = "<group>"; };
 		BF62A1F91FE11AAA0010C046 /* BFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAppDelegate.h; sourceTree = "<group>"; };
 		BF62A1FA1FE11AAA0010C046 /* BFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFAppDelegate.m; sourceTree = "<group>"; };
+		BF62A1FF1FE23ACF0010C046 /* BFTempletViewController+RunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFTempletViewController+RunTime.h"; sourceTree = "<group>"; };
+		BF62A2001FE23ACF0010C046 /* BFTempletViewController+RunTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BFTempletViewController+RunTime.m"; sourceTree = "<group>"; };
+		BF62A20A1FE270DB0010C046 /* BFLocalSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLocalSettings.h; sourceTree = "<group>"; };
+		BF62A20B1FE270DB0010C046 /* BFLocalSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLocalSettings.m; sourceTree = "<group>"; };
+		BF62A20C1FE270DB0010C046 /* BFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLocation.h; sourceTree = "<group>"; };
+		BF62A20D1FE270DB0010C046 /* BFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLocation.m; sourceTree = "<group>"; };
+		BF62A20E1FE270DB0010C046 /* BFLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLocationManager.h; sourceTree = "<group>"; };
+		BF62A20F1FE270DB0010C046 /* BFLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLocationManager.m; sourceTree = "<group>"; };
+		BF62A2111FE270DB0010C046 /* DSAAS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAAS.h; sourceTree = "<group>"; };
+		BF62A2121FE270DB0010C046 /* DSAAS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAAS.m; sourceTree = "<group>"; };
+		BF62A2131FE270DB0010C046 /* GlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalUICommon.h; sourceTree = "<group>"; };
+		BF62A2141FE270DB0010C046 /* GlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalUICommon.m; sourceTree = "<group>"; };
+		BF62A2151FE270DB0010C046 /* NSArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utilities.h"; sourceTree = "<group>"; };
+		BF62A2161FE270DB0010C046 /* NSArray+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utilities.m"; sourceTree = "<group>"; };
+		BF62A2171FE270DB0010C046 /* NSData+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utilities.h"; sourceTree = "<group>"; };
+		BF62A2181FE270DB0010C046 /* NSData+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utilities.m"; sourceTree = "<group>"; };
+		BF62A2191FE270DB0010C046 /* NSDate+Utilties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilties.h"; sourceTree = "<group>"; };
+		BF62A21A1FE270DB0010C046 /* NSDate+Utilties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilties.m"; sourceTree = "<group>"; };
+		BF62A21B1FE270DB0010C046 /* NSMutableDictionary+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Utilities.h"; sourceTree = "<group>"; };
+		BF62A21C1FE270DB0010C046 /* NSMutableDictionary+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Utilities.m"; sourceTree = "<group>"; };
+		BF62A21D1FE270DB0010C046 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		BF62A21E1FE270DB0010C046 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		BF62A21F1FE270DB0010C046 /* TWDeviceUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDeviceUtilities.h; sourceTree = "<group>"; };
+		BF62A2201FE270DB0010C046 /* TWDeviceUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWDeviceUtilities.m; sourceTree = "<group>"; };
+		BF62A2211FE270DB0010C046 /* UIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFactory.h; sourceTree = "<group>"; };
+		BF62A2221FE270DB0010C046 /* UIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFactory.m; sourceTree = "<group>"; };
+		BF62A2231FE270DB0010C046 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		BF87BE631FE0D45200146486 /* BFMatchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFMatchResult.h; sourceTree = "<group>"; };
 		BF87BE641FE0D45200146486 /* BFMatchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFMatchResult.m; sourceTree = "<group>"; };
 		BF87BE651FE0D45200146486 /* BFRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFRegularExpression.h; sourceTree = "<group>"; };
@@ -203,29 +232,6 @@
 		BF87BEA41FE0D4EC00146486 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		BF87BEA51FE0D4F500146486 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		BF87BEA61FE0D56400146486 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BF87BEA81FE0D6A000146486 /* BFLocalSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLocalSettings.h; sourceTree = "<group>"; };
-		BF87BEA91FE0D6A000146486 /* BFLocalSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLocalSettings.m; sourceTree = "<group>"; };
-		BF87BEAA1FE0D6A000146486 /* BFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLocation.h; sourceTree = "<group>"; };
-		BF87BEAB1FE0D6A000146486 /* BFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLocation.m; sourceTree = "<group>"; };
-		BF87BEAC1FE0D6A000146486 /* BFLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLocationManager.h; sourceTree = "<group>"; };
-		BF87BEAD1FE0D6A000146486 /* BFLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLocationManager.m; sourceTree = "<group>"; };
-		BF87BEB11FE0D6A000146486 /* GlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalUICommon.h; sourceTree = "<group>"; };
-		BF87BEB21FE0D6A000146486 /* GlobalUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalUICommon.m; sourceTree = "<group>"; };
-		BF87BEB31FE0D6A000146486 /* NSArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utilities.h"; sourceTree = "<group>"; };
-		BF87BEB41FE0D6A000146486 /* NSArray+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utilities.m"; sourceTree = "<group>"; };
-		BF87BEB51FE0D6A000146486 /* NSData+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utilities.h"; sourceTree = "<group>"; };
-		BF87BEB61FE0D6A000146486 /* NSData+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utilities.m"; sourceTree = "<group>"; };
-		BF87BEB71FE0D6A000146486 /* NSDate+Utilties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilties.h"; sourceTree = "<group>"; };
-		BF87BEB81FE0D6A000146486 /* NSDate+Utilties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilties.m"; sourceTree = "<group>"; };
-		BF87BEB91FE0D6A000146486 /* NSMutableDictionary+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Utilities.h"; sourceTree = "<group>"; };
-		BF87BEBA1FE0D6A000146486 /* NSMutableDictionary+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Utilities.m"; sourceTree = "<group>"; };
-		BF87BEBB1FE0D6A000146486 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
-		BF87BEBC1FE0D6A000146486 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
-		BF87BEBD1FE0D6A000146486 /* TWDeviceUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDeviceUtilities.h; sourceTree = "<group>"; };
-		BF87BEBE1FE0D6A000146486 /* TWDeviceUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWDeviceUtilities.m; sourceTree = "<group>"; };
-		BF87BEBF1FE0D6A000146486 /* UIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFactory.h; sourceTree = "<group>"; };
-		BF87BEC01FE0D6A000146486 /* UIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFactory.m; sourceTree = "<group>"; };
-		BF87BEC11FE0D6A000146486 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		BF87BECF1FE0D71700146486 /* Commons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commons.h; sourceTree = "<group>"; };
 		BF87BED01FE0D82900146486 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BF87BED11FE0D8D200146486 /* UIImage+Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Device.h"; sourceTree = "<group>"; };
@@ -315,6 +321,8 @@
 				BF87BEE41FE0F6E200146486 /* General */,
 				BF62A1F41FE119EC0010C046 /* BFTempletViewController.h */,
 				BF62A1F51FE119EC0010C046 /* BFTempletViewController.m */,
+				BF62A1FF1FE23ACF0010C046 /* BFTempletViewController+RunTime.h */,
+				BF62A2001FE23ACF0010C046 /* BFTempletViewController+RunTime.m */,
 				BF4849C11FE0CDBE00B83036 /* AppDelegate.h */,
 				BF4849C21FE0CDBE00B83036 /* AppDelegate.m */,
 				BF4849C41FE0CDBE00B83036 /* ViewController.h */,
@@ -349,13 +357,13 @@
 		BF4849F61FE0D0B500B83036 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				BF62A2091FE270DB0010C046 /* Utilities */,
 				BF87BECF1FE0D71700146486 /* Commons.h */,
 				BF62A1AB1FE107180010C046 /* Base */,
 				BF87BE751FE0D49100146486 /* Categories */,
 				BF87BE621FE0D45200146486 /* BFRouter */,
 				BF4849F81FE0D0B500B83036 /* Network */,
 				BF4849FA1FE0D0B500B83036 /* Widgets */,
-				BF87BEA71FE0D6A000146486 /* Utilities */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -485,6 +493,38 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		BF62A2091FE270DB0010C046 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BF62A20A1FE270DB0010C046 /* BFLocalSettings.h */,
+				BF62A20B1FE270DB0010C046 /* BFLocalSettings.m */,
+				BF62A20C1FE270DB0010C046 /* BFLocation.h */,
+				BF62A20D1FE270DB0010C046 /* BFLocation.m */,
+				BF62A20E1FE270DB0010C046 /* BFLocationManager.h */,
+				BF62A20F1FE270DB0010C046 /* BFLocationManager.m */,
+				BF62A2111FE270DB0010C046 /* DSAAS.h */,
+				BF62A2121FE270DB0010C046 /* DSAAS.m */,
+				BF62A2131FE270DB0010C046 /* GlobalUICommon.h */,
+				BF62A2141FE270DB0010C046 /* GlobalUICommon.m */,
+				BF62A2151FE270DB0010C046 /* NSArray+Utilities.h */,
+				BF62A2161FE270DB0010C046 /* NSArray+Utilities.m */,
+				BF62A2171FE270DB0010C046 /* NSData+Utilities.h */,
+				BF62A2181FE270DB0010C046 /* NSData+Utilities.m */,
+				BF62A2191FE270DB0010C046 /* NSDate+Utilties.h */,
+				BF62A21A1FE270DB0010C046 /* NSDate+Utilties.m */,
+				BF62A21B1FE270DB0010C046 /* NSMutableDictionary+Utilities.h */,
+				BF62A21C1FE270DB0010C046 /* NSMutableDictionary+Utilities.m */,
+				BF62A21D1FE270DB0010C046 /* NSString+Utilities.h */,
+				BF62A21E1FE270DB0010C046 /* NSString+Utilities.m */,
+				BF62A21F1FE270DB0010C046 /* TWDeviceUtilities.h */,
+				BF62A2201FE270DB0010C046 /* TWDeviceUtilities.m */,
+				BF62A2211FE270DB0010C046 /* UIFactory.h */,
+				BF62A2221FE270DB0010C046 /* UIFactory.m */,
+				BF62A2231FE270DB0010C046 /* Utilities.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		BF87BE621FE0D45200146486 /* BFRouter */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,37 +580,6 @@
 				BF87BE941FE0D49100146486 /* UIView+ConvenienceFrame.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		BF87BEA71FE0D6A000146486 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				BF87BEA81FE0D6A000146486 /* BFLocalSettings.h */,
-				BF87BEA91FE0D6A000146486 /* BFLocalSettings.m */,
-				BF87BEAA1FE0D6A000146486 /* BFLocation.h */,
-				BF87BEAB1FE0D6A000146486 /* BFLocation.m */,
-				BF87BEAC1FE0D6A000146486 /* BFLocationManager.h */,
-				BF87BEAD1FE0D6A000146486 /* BFLocationManager.m */,
-				BF87BEB11FE0D6A000146486 /* GlobalUICommon.h */,
-				BF87BEB21FE0D6A000146486 /* GlobalUICommon.m */,
-				BF87BEB31FE0D6A000146486 /* NSArray+Utilities.h */,
-				BF87BEB41FE0D6A000146486 /* NSArray+Utilities.m */,
-				BF87BEB51FE0D6A000146486 /* NSData+Utilities.h */,
-				BF87BEB61FE0D6A000146486 /* NSData+Utilities.m */,
-				BF87BEB71FE0D6A000146486 /* NSDate+Utilties.h */,
-				BF87BEB81FE0D6A000146486 /* NSDate+Utilties.m */,
-				BF87BEB91FE0D6A000146486 /* NSMutableDictionary+Utilities.h */,
-				BF87BEBA1FE0D6A000146486 /* NSMutableDictionary+Utilities.m */,
-				BF87BEBB1FE0D6A000146486 /* NSString+Utilities.h */,
-				BF87BEBC1FE0D6A000146486 /* NSString+Utilities.m */,
-				BF87BEBD1FE0D6A000146486 /* TWDeviceUtilities.h */,
-				BF87BEBE1FE0D6A000146486 /* TWDeviceUtilities.m */,
-				BF87BEBF1FE0D6A000146486 /* UIFactory.h */,
-				BF87BEC01FE0D6A000146486 /* UIFactory.m */,
-				BF87BEC11FE0D6A000146486 /* Utilities.h */,
-			);
-			name = Utilities;
-			path = "../../../Work/1jia2-iOS/Commons/Utilities";
 			sourceTree = "<group>";
 		};
 		BF87BEE41FE0F6E200146486 /* General */ = {
@@ -812,8 +821,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF87BE9A1FE0D49200146486 /* UIImage+ImageEffects.m in Sources */,
+				BF62A2251FE270DB0010C046 /* BFLocation.m in Sources */,
+				BF62A2281FE270DB0010C046 /* DSAAS.m in Sources */,
 				BF87BE971FE0D49200146486 /* UIButton+Badge.m in Sources */,
-				BF87BEC81FE0D6A000146486 /* NSArray+Utilities.m in Sources */,
 				BF62A1CC1FE107180010C046 /* BFTableView.m in Sources */,
 				BF62A1CD1FE107180010C046 /* BFView.m in Sources */,
 				BF87BEA31FE0D49200146486 /* UIView+ConvenienceFrame.m in Sources */,
@@ -822,56 +832,57 @@
 				BF62A1F61FE119EC0010C046 /* BFTempletViewController.m in Sources */,
 				BF87BE9E1FE0D49200146486 /* UIImage+TintColor.m in Sources */,
 				BF87BF071FE0F74C00146486 /* BFRequest.m in Sources */,
+				BF62A2241FE270DB0010C046 /* BFLocalSettings.m in Sources */,
 				BF62A1F31FE115020010C046 /* BFTableViewDelegate.m in Sources */,
 				BF87BF051FE0F74C00146486 /* BFNetworkReachabilityManager.m in Sources */,
-				BF87BEC21FE0D6A000146486 /* BFLocalSettings.m in Sources */,
 				BF87BEA11FE0D49200146486 /* UINavigationItem+iOS7Spacing.m in Sources */,
-				BF87BEC71FE0D6A000146486 /* GlobalUICommon.m in Sources */,
 				BF87BF041FE0F74C00146486 /* BFResponse.m in Sources */,
+				BF62A22C1FE270DB0010C046 /* NSDate+Utilties.m in Sources */,
 				BF87BEA01FE0D49200146486 /* UINavigationController+CompletionHandler.m in Sources */,
 				BF62A1CA1FE107180010C046 /* BFRefreshCollectionView.m in Sources */,
+				BF62A22F1FE270DB0010C046 /* TWDeviceUtilities.m in Sources */,
 				BF87BE9D1FE0D49200146486 /* UIImage+RoundedCorner.m in Sources */,
+				BF62A2301FE270DB0010C046 /* UIFactory.m in Sources */,
 				BF87BE9C1FE0D49200146486 /* UIImage+Resize.m in Sources */,
 				BF62A1F01FE114150010C046 /* BFTitleTextFieldCell.m in Sources */,
 				BF62A1C61FE107180010C046 /* BFCollectionViewCell.m in Sources */,
 				BF62A1DC1FE10F510010C046 /* BFTextField.m in Sources */,
-				BF87BEC91FE0D6A000146486 /* NSData+Utilities.m in Sources */,
 				BF87BE9B1FE0D49200146486 /* UIImage+LFGif.m in Sources */,
+				BF62A2291FE270DB0010C046 /* GlobalUICommon.m in Sources */,
 				BF62A1E71FE1103E0010C046 /* BFImageTextFieldCell.m in Sources */,
-				BF87BECE1FE0D6A000146486 /* UIFactory.m in Sources */,
 				BF62A1C51FE107180010C046 /* BFVersion.m in Sources */,
+				BF62A22B1FE270DB0010C046 /* NSData+Utilities.m in Sources */,
 				BF62A1ED1FE112030010C046 /* BFTitleValueCell.m in Sources */,
 				BF4849C61FE0CDBE00B83036 /* ViewController.m in Sources */,
 				BF62A1C41FE107180010C046 /* BFObject.m in Sources */,
+				BF62A22D1FE270DB0010C046 /* NSMutableDictionary+Utilities.m in Sources */,
 				BF87BF301FE0FF1900146486 /* BFTagView.m in Sources */,
 				BF62A1E81FE1103E0010C046 /* BFTitleCell.m in Sources */,
 				BF87BF061FE0F74C00146486 /* BFNetworkManager.m in Sources */,
 				BF87BE981FE0D49200146486 /* UIImage+Alpha.m in Sources */,
 				BF87BE6F1FE0D45200146486 /* BFMatchResult.m in Sources */,
+				BF62A22A1FE270DB0010C046 /* NSArray+Utilities.m in Sources */,
+				BF62A2261FE270DB0010C046 /* BFLocationManager.m in Sources */,
 				BF62A1C71FE107180010C046 /* BFTableViewCell.m in Sources */,
 				BF87BED31FE0D8D300146486 /* UIImage+Device.m in Sources */,
+				BF62A2011FE23ACF0010C046 /* BFTempletViewController+RunTime.m in Sources */,
 				BF62A1A71FE104A60010C046 /* BFTabViewControlle.m in Sources */,
+				BF62A22E1FE270DB0010C046 /* NSString+Utilities.m in Sources */,
 				BF4849C31FE0CDBE00B83036 /* AppDelegate.m in Sources */,
 				BF4849D41FE0CDBE00B83036 /* main.m in Sources */,
-				BF87BECA1FE0D6A000146486 /* NSDate+Utilties.m in Sources */,
 				BF62A1C91FE107180010C046 /* BFCollectionView.m in Sources */,
 				BF87BF2D1FE0FEED00146486 /* BFSwitchView.m in Sources */,
 				BF62A1AA1FE1050E0010C046 /* BFMainViewController.m in Sources */,
 				BF87BE9F1FE0D49200146486 /* UILabel+Attributes.m in Sources */,
 				BF87BE961FE0D49200146486 /* UIBarButtonItem+Badge.m in Sources */,
 				BF87BE731FE0D45200146486 /* BFRouter.m in Sources */,
-				BF87BECC1FE0D6A000146486 /* NSString+Utilities.m in Sources */,
 				BF87BEA21FE0D49200146486 /* UITabBar+Badge.m in Sources */,
 				BF87BE721FE0D45200146486 /* BFRouteMatcher.m in Sources */,
-				BF87BECD1FE0D6A000146486 /* TWDeviceUtilities.m in Sources */,
 				BF62A1C81FE107180010C046 /* BFViewController.m in Sources */,
 				BF87BE951FE0D49200146486 /* MKMapView+ZoomLevel.m in Sources */,
-				BF87BEC41FE0D6A000146486 /* BFLocationManager.m in Sources */,
-				BF87BECB1FE0D6A000146486 /* NSMutableDictionary+Utilities.m in Sources */,
 				BF62A1A41FE103A30010C046 /* BFStepper.m in Sources */,
 				BF4849CC1FE0CDBE00B83036 /* BaseFrameDemo.xcdatamodeld in Sources */,
 				BF62A1FB1FE11AAA0010C046 /* BFAppDelegate.m in Sources */,
-				BF87BEC31FE0D6A000146486 /* BFLocation.m in Sources */,
 				BF87BE741FE0D45200146486 /* BFRouteRequest.m in Sources */,
 				BF62A1CB1FE107180010C046 /* BFRefreshTableView.m in Sources */,
 			);
