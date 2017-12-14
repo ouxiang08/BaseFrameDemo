@@ -10,11 +10,29 @@
 
 #pragma mark - Enmu（枚举）
 
+// Specifying a typed enum with a name (recommended way)用一个别名来指定一个带有typedef关键字的枚举类型（推荐方法）
 typedef NS_ENUM(NSInteger, RNCAdRequestState) {
     RNCAdRequestStateInactive,
     RNCAdRequestStateLoading
 };
 
+// Specify a bitmask with a name (recommended way)用一个别名来指定一个bitmask（推荐方法
+
+typedef NS_ENUM(NSUInteger, RPBitM) {
+    RPOptionNone = 0,
+    RPOptionRight = 1 << 0,
+    RPOptionBottom = 1 << 1,
+    RPOptionLeft = 1 << 2,
+    RPOptionTop = 1 << 3
+};
+
+// Untyped with a name 用一个别名来定义一个带有typedef关键字将枚举类型
+typedef enum {
+    BFRefreshTypeTop = 1 << 0,
+    BFRefreshTypeBottom = 1 << 1,
+    BFRefreshTypeBoth = 1 << 2,
+    BFRefreshTypeNone = 1 << 3,
+}BFRefreshType;
 
 @interface BFTempletViewController () <UITableViewDataSource, UITableViewDelegate> {
     //不要将私有的实例变量和方法声明在头文件中，应将私有变量和方法声明在实现文件的类扩展内。
@@ -23,6 +41,8 @@ typedef NS_ENUM(NSInteger, RNCAdRequestState) {
 }
 
 @property (nonatomic, strong) UIWebView *adXWebView;
+
+@property (readwrite, nonatomic, strong) NSString *fullName;
 
 @end
 
@@ -79,9 +99,76 @@ typedef NS_ENUM(NSInteger, RNCAdRequestState) {
 
 #pragma mark - Example (样例代码)
 
+/*
+ *在32位或者64位的系统环境中，允许的数据类型大小是由为具体的类型分配了多少内存字节决定的。32位系统中长整形(long)分配了4字节，64分配了分配8字节
+ *Objective-C继承了所有的C语言基本类型，然后又新增了一些其他的类型。
+ */
 - (void)ShowDataType {
-    NSLog(@"float size: %zu", sizeof(float));
+    
+    ///C语言基础
+    
+    /*
+     *整数。
+     *整数既可以是signed（有符号）的也可以是unsigned（无符号）的。signed（有符号）代表是正整数或者负整数，unsigned（无符号）代表只能是正整数。
+     */
 
+    //Char(1 byte of both 32-bit and 64-bit)
+    unsigned char anUnnsignedChar = 255;
+    NSLog(@"char size:%zu",sizeof(char));
+    
+    //Char(2 byte of both 32-bit and 64-bit)
+    short aShort = -32678;
+    unsigned short anUnsignedShort = 65535;
+    NSLog(@"short size: %zu", sizeof(short));
+    
+    //Char(1 byte of both 32-bit and 64-bit)
+    int anInt = -2147483648;
+    unsigned int anUnsignedInt = 4294967295;
+    NSLog(@"int size: %zu", sizeof(int));
+
+    // Long (4 bytes for 32-bit, 8 bytes for 64-bit)
+    long aLong = -9223372036854775808; // 32-bit
+    unsigned long auUnsignedLong =  18446744073709551615; // 32-bit
+    NSLog(@"long size: %zu", sizeof(long));
+    
+    /*
+     *浮点类型。
+     *浮点没有signed（有符号）和unsigned（无符号）。
+     */
+    // Single precision floating-point (4 bytes for both 32-bit and 64-bit)单精度浮点float aFloat = 72.0345f;
+    NSLog(@"float size :%zu",sizeof(float));
+    
+    // Double precision floating-point (8 bytes for both 32-bit and 64-bit)双精度浮点。
+    double aDouble = -72.03245f;
+    NSLog(@"double size :%zu",sizeof(double));
+    
+    // Extended precision floating-point (16 bytes for both 32-bit and 64-bit)扩展精度浮点。
+    long double aLongDouble = 72.0345e7L;
+    NSLog(@"long double size：%zu",sizeof(long double));
+    
+    ///Objective-C语言基础
+    
+    //id：被定义为匿名或者动态对象类型，他可以存储任何对象的引用，不需要指定指针的符号。
+    id delegate = _tableView.delegate;
+    
+    //Class：用来表示对象的类，并能用于对象的内省。
+    Class class = [UIView class];
+    
+    //SEL：用于指定一个selector，它是编译器指定的代码，用于识别方法的名称。
+    SEL someSelector = @selector(ShowDataType);
+    
+    //IMP：用于在方法开始时指向内存地址。
+    IMP theImplementation = [self methodForSelector:someSelector];
+    
+    //BOOL：用来制定一个布尔类型，布尔类型中0值被认为NO(false)，任何非零值被认为YES(true)。
+    //BOOL / bool / Boolean / NSCFBoolean
+    BOOL isBool = YES;  //Or NO
+    
+    //nil：用来指定一个空对象指针。当类第一次被初始化时，类中所有的属性被设置为0，这意味着都指向空指针。
+    //nil / Nil / NULL / NSNull
+    
+    ///Objective-C中还有很多其他类型，如NSInteger, NSUInteger, CGRect,CGFloat, CGSize, CGPoint等。
+    
 }
 
 #pragma mark - Data (数据的处理)
