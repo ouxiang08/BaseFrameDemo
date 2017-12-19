@@ -12,7 +12,7 @@
         <!--Chats-->
         <scene sceneID="gyS-5T-hzG">
             <objects>
-                <navigationController id="PDp-Ms-BML" customClass="BFSNavigationController" customModule="BaseFrameDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="PDp-Ms-BML" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Chats" image="icon_chat" id="QJn-qB-cGu">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_chat_active"/>
@@ -33,7 +33,7 @@
         <!--Feeds-->
         <scene sceneID="Dsh-9X-HKY">
             <objects>
-                <navigationController id="P3S-IK-i6g" customClass="BFSNavigationController" customModule="BaseFrameDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="P3S-IK-i6g" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feeds" image="icon_feeds" id="zwp-3z-hI3">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_feeds_active"/>
@@ -43,10 +43,23 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="nvq-7K-ph2" kind="relationship" relationship="rootViewController" id="xDy-x0-seK"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpM-zF-eh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-316" y="1119"/>
+        </scene>
+        <!--BFAutoLayoutController-->
+        <scene sceneID="JF0-gc-wKJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7me-Fq-Dad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AutoLayout" referencedIdentifier="BFAutoLayoutController" id="nvq-7K-ph2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PVU-IN-IyQ"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-317" y="1571"/>
         </scene>
         <!--BFAutoLayoutController-->
         <scene sceneID="VyW-7f-M30">
@@ -56,7 +69,17 @@
                     <navigationItem key="navigationItem" id="s74-u4-coc"/>
                 </viewControllerPlaceholder>
             </objects>
-            <point key="canvasLocation" x="-1760" y="1562"/>
+            <point key="canvasLocation" x="-1760" y="1571"/>
+        </scene>
+        <!--BFAutoLayoutController-->
+        <scene sceneID="evw-2f-weS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4w-iF-etV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AutoLayout" referencedIdentifier="BFAutoLayoutController" id="tW7-MX-2rl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lLz-Uy-yo7"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-1051" y="1571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="25e-Pk-Vdy">
@@ -82,7 +105,7 @@
         <!--Contacts-->
         <scene sceneID="zt8-YV-MyE">
             <objects>
-                <navigationController id="viU-km-OfP" customClass="BFSNavigationController" customModule="BaseFrameDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="viU-km-OfP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contacts" image="icon_contact" id="py8-3d-hwE">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_contact_active"/>
@@ -92,6 +115,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="tW7-MX-2rl" kind="relationship" relationship="rootViewController" id="tor-It-rUh"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOO-wA-kpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +126,7 @@
         <!--Discover-->
         <scene sceneID="e8F-4e-hRp">
             <objects>
-                <navigationController id="JwB-Q8-Z1g" customClass="BFSNavigationController" customModule="BaseFrameDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="JwB-Q8-Z1g" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Discover" image="icon_discover" id="OAo-xZ-8XV">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_discover_active"/>
@@ -110,15 +136,28 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="zgH-Ly-Ghn" kind="relationship" relationship="rootViewController" id="rbQ-jI-jHn"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kjw-P5-4de" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="426" y="1119"/>
         </scene>
+        <!--BFAutoLayoutController-->
+        <scene sceneID="hzD-Q7-nMb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9v-iD-9tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AutoLayout" referencedIdentifier="BFAutoLayoutController" id="zgH-Ly-Ghn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zih-1f-VpQ"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="424" y="1571"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="Mfw-fr-EAT">
             <objects>
-                <navigationController id="tdN-EB-SXX" customClass="BFSNavigationController" customModule="BaseFrameDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="tdN-EB-SXX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="icon_profile" id="JpV-vL-EGX">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="icon_profile_active"/>
@@ -128,10 +167,23 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Ewb-M5-PMC" kind="relationship" relationship="rootViewController" id="EIS-Yp-Qh3"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0T-Hx-63H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1161" y="1119"/>
+        </scene>
+        <!--BFAutoLayoutController-->
+        <scene sceneID="Yg6-PP-sCx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8j-9Q-ENp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="AutoLayout" referencedIdentifier="BFAutoLayoutController" id="Ewb-M5-PMC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e7r-cD-1pl"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="1160" y="1571"/>
         </scene>
     </scenes>
     <resources>
