@@ -12,6 +12,8 @@ pod 'IQKeyboardManager'
 pod 'MLeaksFinder'
 pod 'MJRefresh'
 pod 'SDVersion'
+pod 'AsyncDisplayKit'
 pod 'FMDB'
+pod 'MBProgressHUD'
 
 end
