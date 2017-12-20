@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DSAAS : NSObject
+@interface SortAlgorithms : NSObject
 
+//冒泡排序
 - (NSArray *)bubbleSort:(NSArray *)array;
 
 - (NSArray *)bubbleSort1:(NSArray *)array;
 
 - (NSArray *)bubbleSort2:(NSArray *)array;
+//简单排序
+- (NSArray *)simpleSort:(NSArray *)array;
+//快速排序
+- (NSArray *)quickSort:(NSArray *)array;
 
 @end

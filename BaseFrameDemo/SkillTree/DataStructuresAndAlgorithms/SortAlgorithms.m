@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Jimmy. All rights reserved.
 //
 
-#import "DSAAS.h"
+#import "SortAlgorithms.h"
 
-@implementation DSAAS
+@implementation SortAlgorithms
 
 - (NSArray *)bubbleSort:(NSArray *)array {
     if (array.count) {
