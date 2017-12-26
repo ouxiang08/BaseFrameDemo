@@ -326,6 +326,7 @@
 				BF62A1F81FE11A5B0010C046 /* AppDelegate */,
 				BF87BEE41FE0F6E200146486 /* General */,
 				BF62A1F51FE119EC0010C046 /* BFTempletViewController.m */,
+				BF62A1F41FE119EC0010C046 /* BFTempletViewController.h */,
 				BF62A1FF1FE23ACF0010C046 /* BFTempletViewController+RunTime.h */,
 				BF62A2001FE23ACF0010C046 /* BFTempletViewController+RunTime.m */,
 				BF4849C11FE0CDBE00B83036 /* AppDelegate.h */,
@@ -624,7 +625,6 @@
 		BF87BEE41FE0F6E200146486 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				BF62A1F41FE119EC0010C046 /* BFTempletViewController.h */,
 				BF62A1DD1FE1103E0010C046 /* Cells */,
 				BF62A1E61FE1103E0010C046 /* Views */,
 				BF87BEE51FE0F6E200146486 /* Classes */,
